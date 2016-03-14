@@ -14,16 +14,148 @@
 
 </head>
 <body>
+	
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Welcome to Roshambo Stadium</h1>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" id="name" placeholder="Enter name ...">
+					<button type="submit" class="btn btn-primary" id="newUser">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
 	<div class="container">
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Oh hello.</h1>
-				<p><span id="watchers"></span></p>
+		<div class="row12">
+			<div class="col-md-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center" id="player1">Player 1</h3>
+					</div>
+					<div class="row12 panel-body text-center">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+							<img src="assets/images/rock.png" alt="Choose Rock">
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+							<img src="assets/images/paper.png" alt="Choose Paper">
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+							<img src="assets/images/scissors.png" alt="Choose Scissors">
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="col-md-2">
+				<div class="history">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">Result</h3>
+						</div>
+						<div class="panel-body text-center">
+							<span id="result"></span>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center">History</h3>
+						</div>
+						<div class="panel-body text-center">
+							<span id="wins"></span>
+							<span id="losses"></span>
+							<span id="ties"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center" id="player1">Player 2</h3>
+					</div>
+					<div class="row12 panel-body text-center">
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+							<img src="assets/images/rock.png" alt="Choose Rock">
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+							<img src="assets/images/paper.png" alt="Choose Paper">
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 choice">
+							<img src="assets/images/scissors.png" alt="Choose Scissors">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="row12">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 chatLog">
+				<div class="panel panel-default chatHistory">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center" id="chatHeader">Chat History</h3>
+					</div>
+					<table class="table">
+						<tbody id="chatHistory">
+							<tr class="player1Chat">
+								<td>1:51pm</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa explicabo laboriosam deleniti corporis labore quia hic iusto esse, officiis asperiores. </td>
+							</tr>
+							<tr class="player1Chat">
+								<td>1:51pm</td>
+								<td>Pariatur ut esse, consequatur dolorum sint sequi natus repudiandae debitis. Facilis asperiores ullam officia nulla ipsum optio neque enim, blanditiis harum nesciunt!</td>
+							</tr>
+							<tr class="player2Chat">
+								<td>Distinctio cumque ipsam minima eligendi maxime dolor officiis ut totam? Sunt architecto in asperiores molestias!</td>
+								<td>1:51pm</td>
+							</tr>
+							<tr class="player1Chat">
+								<td>1:51pm</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eveniet aspernatur, dolor ipsam modi facere laboriosam quasi, ex aliquam, placeat quas distinctio nulla unde suscipit doloribus et illum perferendis nihil.</td>
+							</tr>
+							<tr class="player2Chat">
+								<td>Distinctio cumque ipsam minima eligendi maxime dolor officiis ut totam? Sunt architecto in asperiores molestias!</td>
+								<td>1:51pm</td>
+							</tr>
+							<tr class="player2Chat">
+								<td>Pariatur ut esse, consequatur dolorum sint sequi natus repudiandae debitis. Facilis asperiores ullam officia nulla ipsum optio neque enim, blanditiis harum nesciunt!</td>
+								<td>1:51pm</td>
+							</tr>
+							<tr class="player1Chat">
+								<td>1:51pm</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eveniet aspernatur, dolor ipsam modi facere laboriosam quasi, ex aliquam, placeat quas distinctio nulla unde suscipit doloribus et illum perferendis nihil.</td>
+							</tr>
+							<tr class="player2Chat">
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+								<td>1:51pm</td>
+							</tr>
+							<tr class="player1Chat">
+								<td>1:51pm</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eveniet aspernatur, dolor ipsam modi facere laboriosam quasi, ex aliquam, placeat quas distinctio nulla unde suscipit doloribus et illum perferendis nihil.</td>
+							</tr>
+							<tr class="player2Chat">
+								<td>Quos eveniet aspernatur, dolor ipsam modi facere laboriosam quasi, ex aliquam, placeat quas distinctio nulla unde suscipit doloribus et illum perferendis nihil.</td>
+								<td>1:51pm</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<form>
+					<div class="form-group">
+						<textarea type="text" class="form-control" id="message" placeholder="Enter message ..."></textarea>
+						<button type="submit" class="btn btn-primary pull-right" id="sendMessage">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2"></div>
 		</div>
 	</div>
 
-	<script src="assets/js/app.js"></script>
+	<!-- <script src="assets/js/app.js"></script> -->
 
 </body>
 </html>

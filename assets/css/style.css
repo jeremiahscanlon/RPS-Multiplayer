@@ -1,0 +1,71 @@
+html,body {
+    height:100%;
+    padding:0;
+}
+
+body {
+    background-color: #000;
+    background-image: url("../images/fight_ref.jpeg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron .form-control{
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.jumbotron {
+	background: rgb(211, 211, 211);
+	background: rgba(211, 211, 211, .5);
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+.panel-body div img {
+	max-width:100%;
+	margin: 10px auto;
+	border: solid 1px #fff;
+}
+
+.panel-body div img:hover {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 0px #999;
+	-webkit-box-shadow: 1px 1px 0px #999;
+	box-shadow: 1px 1px 0px #999;
+}
+
+.chatHistory {	
+	height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;	
+}
+
+.table>tbody>tr {
+	width: 80%;
+	font-size: 12px;	
+}
+
+.table>tbody>tr.player1Chat {
+	text-align: left;
+	float: left;
+	background-color: #f9f9f9;
+	color: #005ce6;
+}
+
+.table>tbody>tr.player2Chat {
+	text-align: right;
+	float: right;
+	color: #009933;
+}
+
+.chatLog form textarea {
+	width: 75%;
+	display: inline-block;
+}
+
+.chatLog form button {
+	width: 20%;
+	display: inline-block;
+}
+
