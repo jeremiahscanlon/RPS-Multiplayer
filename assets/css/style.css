@@ -56,6 +56,7 @@ body {
 .table>tbody>tr.player2Chat {
 	text-align: right;
 	float: right;
+	background-color: #e6e6e6;
 	color: #009933;
 }
 
